@@ -1,0 +1,249 @@
+/* Custom Colors */
+:root {
+  --primary-yellow: #ffc803;
+  --primary-orange: #fd9407;
+  --light-green: #789b52;
+  --dark-green: #2c4916;
+  --white: #ffffff;
+  --gray-100: #f7fafc;
+  --gray-700: #4a5568;
+  --gray-900: #1a202c;
+}
+
+/* Global styles */
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--gray-100);
+  color: var(--dark-green);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+h1, h2, h3, h4 {
+  color: var(--dark-green);
+}
+
+header a {
+  color: var(--primary-yellow);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header a:hover,
+header a:focus {
+  color: var(--dark-green);
+}
+
+/* Button styles */
+button, .btn {
+  background-color: var(--primary-yellow);
+  color: var(--dark-green);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: var(--primary-orange);
+}
+
+button:focus, .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--light-green);
+}
+
+/* Hero section */
+.hero {
+  height: 80vh;
+  background: linear-gradient(to right, var(--primary-orange), var(--light-green));
+  color: var(--white);
+  padding: 5rem 0;
+  text-align: center;
+}
+
+header{
+ background: linear-gradient(to right, var(--primary-orange), var(--light-green));
+
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+/* Section styles */
+section {
+  padding: 4rem 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+}
+
+.bg-primary-orange {
+  background-color: var(--primary-orange);
+}
+
+.text-dark-green {
+  color: var(--dark-green);
+}
+
+.text-primary-yellow {
+  color: var(--primary-yellow);
+}
+
+/* Problem section */
+/* Ensure the section is centered both horizontally and vertically */
+.problem-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.problem-text {
+  padding-left: 1rem; /* Padding to create space between text and image */
+}
+
+/* Responsive Design: Stack content vertically on small screens */
+@media (max-width: 768px) {
+  .problem-image, .problem-text {
+      width: 100%;
+      padding-left: 0;
+      margin-bottom: 1rem;
+  }
+}
+
+
+/* Roadmap section */
+/* Progress Bar Container */
+/* Vertical Timeline Container */
+.timeline-vertical {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Milestones Styling */
+.milestone {
+  display: flex;
+  align-items: center;
+}
+
+/* Dot Styling */
+.dot {
+  width: 30px;
+  height: 30px;
+  background-color: var(--primary-yellow);
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+/* Milestone Card */
+.milestone-card {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Hover Effect on Dot */
+.milestone:hover .dot {
+  transform: scale(1.2); /* Grow slightly on hover */
+  background-color: var(--light-green); /* Change color on hover */
+}
+
+/* Milestone Info Tooltip */
+.milestone-info {
+  display: none;
+}
+
+/* Show the milestone description on hover */
+.milestone:hover .milestone-info {
+  display: block;
+  animation: fadeIn 0.3s ease; /* Optional: Fade-in animation */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* Form styling */
+input, textarea {
+  border: 1px solid var(--primary-orange);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--light-green);
+  outline: none;
+  box-shadow: 0 0 0 4px var(--light-green);
+}
+
+/* Footer */
+footer {
+  background-color: var(--dark-green);
+  color: var(--primary-yellow);
+  padding: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--primary-yellow);
+}
+
+footer a:hover, footer a:focus {
+  color: var(--primary-orange);
+}
+
+.problem-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+.problem-text {
+  padding-left: 1rem; /* Padding to create space between text and image */
+}
+
+/* Responsive Design: Stack content vertically on small screens */
+@media (max-width: 768px) {
+  .problem-image, .problem-text {
+      width: 100%;
+      padding-left: 0;
+      margin-bottom: 1rem;
+  }
+}
+
+#cta {
+  background: #789b52;
+}
