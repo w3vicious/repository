@@ -57,18 +57,17 @@ button:focus, .btn:focus {
   box-shadow: 0 0 0 4px var(--light-green);
 }
 
+header{
+  background: linear-gradient(to right, var(--light-green), var(--primary-orange));
+ }
+
 /* Hero section */
 .hero {
   height: 80vh;
-  background: linear-gradient(to right, var(--primary-orange), var(--light-green));
+  background: linear-gradient(to right, var(--light-green), var(--primary-orange));
   color: var(--white);
   padding: 5rem 0;
   text-align: center;
-}
-
-header{
- background: linear-gradient(to right, var(--primary-orange), var(--light-green));
-
 }
 
 .hero h1 {
@@ -108,15 +107,29 @@ section h2 {
 
 /* Problem section */
 /* Ensure the section is centered both horizontally and vertically */
+/* Angular */
 .problem-image img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
-}
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+/* Parralelogram
+.problem-image img {
+  width: 100%;
+  height: auto;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}*/
+
+
 
 .problem-text {
   padding-left: 1rem; /* Padding to create space between text and image */
+}
+
+#problem-heading {
+  padding-bottom: 30px;
 }
 
 /* Responsive Design: Stack content vertically on small screens */
@@ -225,10 +238,29 @@ footer a:hover, footer a:focus {
 }
 
 .problem-image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  width: 100%; /* Make the image take the full width of its container */
+  max-width: 800px; /* Set a maximum width to prevent it from being too large */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Keyframe for zoom-in */
+@keyframes zoomIn {
+  from {
+      transform: scale(0.8); /* Start zoomed out */
+      opacity: 0;
+  }
+  to {
+      transform: scale(1); /* End at normal size */
+      opacity: 1;
+  }
+}
+
+/* Apply zoom-in animation to the image */
+.problem-image img {
+  animation: zoomIn 1.5s ease-in forwards; /* 1.5 seconds duration */
 }
 
 .problem-text {
@@ -245,5 +277,27 @@ footer a:hover, footer a:focus {
 }
 
 #cta {
-  background: #789b52;
+  background: linear-gradient(to right, var(--light-green), var(--primary-orange));
+}
+
+/* Video Section Styling */
+.solution-video iframe {
+  width: 100%;
+  max-width: 800px; /* Limit width on larger screens */
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 150px; /* Increase the height */
+  width: auto;  /* Keep the width proportional */
+}
+
+.baby {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
 }

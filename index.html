@@ -43,8 +43,8 @@
     <header>
         <nav class="container navbar mx-auto px-4 py-6 flex justify-between items-center">
             <!-- Logo or Brand Name -->
-            <a href="#" class="text-primary-orange text-2xl font-bold" aria-label="Pediatric Care Startup Homepage">
-                Kido Solutions
+            <a href="#" class="text-primary-orange text-2xl font-bold logo" aria-label="Pediatric Care Startup Homepage">
+                <img src="logo.png" alt="HealthStart Logo" class="h-16 w-auto"> <!-- Adjust size as needed -->
             </a>
     
             <!-- Navigation Menu -->
@@ -64,32 +64,47 @@
     <!-- Main Content -->
     <main id="main-content">
 
-        <!-- Hero Section -->
-        <section id="home" aria-labelledby="hero-heading" class="hero  text-black py-20">
-            <div class="container mx-auto px-4">
-                <h1 id="hero-heading" class="text-4xl md:text-6xl font-bold mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
-                <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. Ut enim ad minim veni.</p>
-                <a href="#contact" class="btn bg-white text-black-600 px-6 py-3 rounded-lg hover:bg-blue-100 focus:ring focus:ring-blue-300" role="button" aria-label="Request a demo">Request a Demo</a>
+       <!-- Hero Section -->
+        <section id="home" aria-labelledby="hero-heading" class="hero py-20 bg-gray-100">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+                <!-- Text Section -->
+                <div class="hero-text md:w-1/2 w-full mb-8 md:mb-0">
+                    <h1 id="hero-heading" class="text-4xl md:text-6xl font-bold mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                    <p class="text-lg mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit, labore et dolore magna aliqua. Ut enim ad minim veni.</p>
+                    <a href="#contact" class="btn bg-white text-black px-6 py-3 rounded-lg hover:bg-gray-200 focus:ring focus:ring-blue-300" role="button" aria-label="Request a demo">Request a Demo</a>
+                </div>
+
+                <!-- Image Section -->
+                <div class="hero-image md:w-1/2 w-full">
+                    <img src="baby_hero2.png" alt="Hero image description" class="w-full h-auto rounded-lg shadow-lg baby">
+                </div>
             </div>
         </section>
 
-        <!-- Problem Section -->
-    <section id="problem" aria-labelledby="problem-heading" class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
-            <!-- Image Section -->
-            <div class="problem-image md:w-1/2 w-full mb-8 md:mb-0">
-                <img src="path-to-your-image.jpg" alt="A picture representing the problem" class="w-full h-auto rounded-lg shadow-lg">
+
+
+        <!-- Problem Section with Centered Heading, Image and Text Side by Side -->
+        <section id="problem" aria-labelledby="problem-heading" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <!-- Centered Heading -->
+                <h2 id="problem-heading" class="text-3xl font-bold text-gray-800 mb-6 text-center">The Critical Problem in Pediatric Emergency Care</h2>
+
+                <!-- Flexbox Layout for Image and Text -->
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- Image Section -->
+                    <div class="problem-image md:w-1/2 w-full mb-8 md:mb-0">
+                        <img src="problem.jpg" alt="A picture representing the problem" class="w-full h-auto rounded-lg shadow-lg">
+                    </div>
+
+                    <!-- Text Section -->
+                    <div class="problem-text md:w-1/2 w-full md:pl-8">
+                        <p class="text-lg text-gray-700">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel mattis leo, non elementum neque. Aliquam turpis nulla, dignissim in leo sed, tempus egestas arcu. Sed erat nulla, pharetra at nunc a, rutrum molestie nunc. Donec ullamcorper nisi sed libero pulvinar interdum. Fusce libero urna, efficitur ac ornare vel, ultricies ut dui. Ut aliquam erat et mauris aliquet, ornare varius libero varius. Aenean semper tincidunt nisl, a consectetur magna scelerisque fringilla.                         </p>
+                    </div>
+                </div>
             </div>
-            
-            <!-- Text Section -->
-            <div class="problem-text md:w-1/2 w-full md:pl-8">
-                <h2 id="problem-heading" class="text-3xl font-bold text-gray-800 mb-6">The Critical Problem in Pediatric Emergency Care</h2>
-                <p class="text-lg text-gray-700">
-                    Each year, thousands of infants face life-threatening respiratory challenges during emergency transport. Current devices lack the real-time AI-driven support that can make the difference between life and death.
-                </p>
-            </div>
-        </div>
-    </section>
+        </section>
+
 
 
         <!-- Market Size Section -->
@@ -133,38 +148,45 @@
             </div>
         </section> -->
 
+
         <!-- Solution Section -->
-       <!-- Solution Section -->
-<!-- Solution Section -->
         <section id="solution" aria-labelledby="solution-heading" class="py-16 bg-gray-100">
             <div class="container mx-auto px-4">
                 <!-- Solution Header (Centered) -->
                 <h2 id="solution-heading" class="text-3xl font-bold text-gray-800 text-center mb-6">Kido Solution</h2>
                 <p class="text-lg text-gray-700 text-center mb-8">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Learn how Kido is transforming pediatric emergency care with real-time, AI-driven breathing support.
                 </p>
+
+                <!-- Embedded Video Section -->
+                <div class="solution-video w-full mb-12 text-center">
+                    <iframe class="w-full h-auto rounded-lg shadow-lg" width="560" height="315"
+                        src="https://www.youtube.com/embed/your-video-id" 
+                        title="Kido Solution Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
 
                 <!-- Three Boxes for Main Solution Concepts -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Box 1 -->
                     <div class="bg-white p-6 shadow-md rounded-lg text-center relative">
                         <div class="absolute top-0 left-0 w-full h-2 bg-primary-orange rounded-t-lg"></div>
-                        <h3 class="text-2xl font-bold text-dark-green mb-4">Lorem Ipsum dolor tempor</h3>
-                        <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        <h3 class="text-2xl font-bold text-dark-green mb-4">Real-Time Monitoring</h3>
+                        <p class="text-gray-700">Our AI technology provides real-time monitoring for pediatric emergencies.</p>
                     </div>
-                    
+
                     <!-- Box 2 -->
                     <div class="bg-white p-6 shadow-md rounded-lg text-center relative">
                         <div class="absolute top-0 left-0 w-full h-2 bg-primary-orange rounded-t-lg"></div>
-                        <h3 class="text-2xl font-bold text-dark-green mb-4">Laboris nisi ut aliquip ex ea</h3>
-                        <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt</p>
+                        <h3 class="text-2xl font-bold text-dark-green mb-4">Seamless Integration</h3>
+                        <p class="text-gray-700">Seamlessly integrates with ambulance systems for better care.</p>
                     </div>
-                    
+
                     <!-- Box 3 -->
                     <div class="bg-white p-6 shadow-md rounded-lg text-center relative">
                         <div class="absolute top-0 left-0 w-full h-2 bg-primary-orange rounded-t-lg"></div>
-                        <h3 class="text-2xl font-bold text-dark-green mb-4">Quis nostrud exercitation ullamco.</h3>
-                        <p class="text-gray-700">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <h3 class="text-2xl font-bold text-dark-green mb-4">User-Friendly Design</h3>
+                        <p class="text-gray-700">Designed for ease-of-use in critical situations.</p>
                     </div>
                 </div>
             </div>
