@@ -63,7 +63,7 @@ header{
 
 /* Hero section */
 .hero {
-  height: 80vh;
+  height: 75vh;
   background: linear-gradient(to right, var(--light-green), var(--primary-orange));
   color: var(--white);
   padding: 5rem 0;
