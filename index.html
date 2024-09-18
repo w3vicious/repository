@@ -41,24 +41,47 @@
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-blue-600 text-white px-4 py-2 rounded-md">Skip to main content</a>
 
     <header>
-        <nav class="container navbar mx-auto px-4 py-6 flex justify-between items-center">
-            <!-- Logo or Brand Name -->
+        <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+            <!-- Logo Section -->
             <a href="#" class="text-primary-orange text-2xl font-bold logo" aria-label="Pediatric Care Startup Homepage">
-                <img src="logo.png" alt="HealthStart Logo" class="h-16 w-auto"> <!-- Adjust size as needed -->
+                <img src="logo.png" alt="HealthStart Logo" class="h-12 md:h-16 w-auto">
             </a>
     
-            <!-- Navigation Menu -->
-            <ul class="flex space-x-6">
-                <li><a href="#home" class="text-primary-yellow">Home</a></li>
-                <li><a href="#problem" class="text-primary-yellow">Problem</a></li>
-                <li><a href="#market" class="text-primary-yellow">Market</a></li>
-                <li><a href="#solution" class="text-primary-yellow">Solution</a></li>
-            </ul>
+            <!-- Navigation Menu for both Mobile and Desktop -->
+            <div class="flex space-x-6 items-center">
+                <!-- Hamburger Icon (visible on mobile) -->
+                <button id="menu-toggle" class="md:hidden text-primary-yellow focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
     
-            <!-- Call to Action Button -->
-            <a href="#contact" class=" text-primary-yellow px-6 py-2 rounded-lg hover:bg-dark-green focus:ring-light-green focus:ring-4">Contact Us</a>
+                <!-- Full Navigation Menu (visible on desktop, collapsible on mobile) -->
+                <ul id="nav-menu" class="hidden md:flex space-x-6">
+                    <li><a href="#home" class="text-primary-yellow hover:text-primary-orange">Home</a></li>
+                    <li><a href="#problem" class="text-primary-yellow hover:text-primary-orange">Problem</a></li>
+                    <li><a href="#market" class="text-primary-yellow hover:text-primary-orange">Market</a></li>
+                    <li><a href="#solution" class="text-primary-yellow hover:text-primary-orange">Solution</a></li>
+                    <li><a href="#contact" class="text-primary-yellow rounded-lg hover:bg-dark-green">Contact Us</a></li>
+                </ul>
+            </div>
         </nav>
+    
+        <!-- Mobile Navigation Menu (toggled) -->
+        <ul id="mobile-menu" class="hidden flex-col space-y-4 px-4 mt-4 md:hidden">
+            <li><a href="#home" class="text-primary-yellow block hover:text-primary-orange">Home</a></li>
+            <li><a href="#problem" class="text-primary-yellow block hover:text-primary-orange">Problem</a></li>
+            <li><a href="#market" class="text-primary-yellow block hover:text-primary-orange">Market</a></li>
+            <li><a href="#solution" class="text-primary-yellow block hover:text-primary-orange">Solution</a></li>
+            <li><a href="#contact" class="text-primary-yellow block hover:bg-dark-green">Contact Us</a></li>
+        </ul>
     </header>
+    
+    
+    
+    
+    
+    
     
 
     <!-- Main Content -->

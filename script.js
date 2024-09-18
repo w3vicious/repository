@@ -27,3 +27,10 @@ document.querySelectorAll('.milestone').forEach(milestone => {
         tooltip.classList.toggle('hidden');
     });
 });
+
+document.getElementById('menu-toggle').addEventListener('click', function() {
+    var menu = document.getElementById('mobile-menu');
+    menu.classList.toggle('hidden'); // Toggle visibility of mobile menu
+});
+
+

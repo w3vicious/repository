@@ -301,3 +301,34 @@ footer a:hover, footer a:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
 }
+
+/* Ensure logo scales properly across devices */
+.logo img {
+  height: 48px; /* Default mobile size */
+  width: auto;
+}
+
+/* Increase the logo size on medium and larger screens */
+@media (min-width: 768px) {
+  .logo img {
+      height: 64px; /* Adjusted size for larger screens */
+  }
+
+  /* Desktop Menu Styling */
+  nav ul {
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+
+
+/* Center the navigation items on desktop */
+nav ul {
+  display: flex;
+  justify-content: center; /* Centers the <li> elements horizontally */
+  align-items: center;     /* Aligns the <li> elements vertically */
+}
+
+
+
