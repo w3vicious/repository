@@ -267,15 +267,6 @@ footer a:hover, footer a:focus {
   padding-left: 1rem; /* Padding to create space between text and image */
 }
 
-/* Responsive Design: Stack content vertically on small screens */
-@media (max-width: 768px) {
-  .problem-image, .problem-text {
-      width: 100%;
-      padding-left: 0;
-      margin-bottom: 1rem;
-  }
-}
-
 #cta {
   background: linear-gradient(to right, var(--light-green), var(--primary-orange));
 }
@@ -291,7 +282,7 @@ footer a:hover, footer a:focus {
 }
 
 .logo img {
-  height: 150px; /* Increase the height */
+  height: 100px; /* Increase the height */
   width: auto;  /* Keep the width proportional */
 }
 
@@ -302,33 +293,6 @@ footer a:hover, footer a:focus {
   clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
 }
 
-/* Ensure logo scales properly across devices */
-.logo img {
-  height: 48px; /* Default mobile size */
-  width: auto;
-}
-
-/* Increase the logo size on medium and larger screens */
-@media (min-width: 768px) {
-  .logo img {
-      height: 64px; /* Adjusted size for larger screens */
-  }
-
-  /* Desktop Menu Styling */
-  nav ul {
-      margin-left: auto;
-      margin-right: auto;
-  }
-}
-
-
-
-/* Center the navigation items on desktop */
-nav ul {
-  display: flex;
-  justify-content: center; /* Centers the <li> elements horizontally */
-  align-items: center;     /* Aligns the <li> elements vertically */
-}
 
 
 
