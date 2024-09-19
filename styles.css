@@ -114,14 +114,6 @@ section h2 {
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 } 
-/* Parralelogram
-.problem-image img {
-  width: 100%;
-  height: auto;
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}*/
-
 
 
 .problem-text {
@@ -132,18 +124,6 @@ section h2 {
   padding-bottom: 30px;
 }
 
-/* Responsive Design: Stack content vertically on small screens */
-@media (max-width: 768px) {
-  .problem-image, .problem-text {
-      width: 100%;
-      padding-left: 0;
-      margin-bottom: 1rem;
-  }
-}
-
-
-/* Roadmap section */
-/* Progress Bar Container */
 /* Vertical Timeline Container */
 .timeline-vertical {
   display: flex;
