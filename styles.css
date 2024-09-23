@@ -146,6 +146,7 @@ section h2 {
   margin-right: 1rem;
 }
 
+
 /* Milestone Card */
 .milestone-card {
   width: 100%;
@@ -271,6 +272,20 @@ footer a:hover, footer a:focus {
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+}
+
+.gif img{
+    width: 100%;
+    height: auto;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} 
+
+.market img{
+  width: 100%;
+  height: auto;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
