@@ -25,6 +25,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- JavaScript -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -111,45 +114,67 @@
 
 
         <!-- Problem Section with Centered Heading, Image and Text Side by Side -->
-        <section id="problem" aria-labelledby="problem-heading" class="py-16 bg-gray-100">
-            <div class="container mx-auto px-4">
-                <!-- Centered Heading -->
-                <h2 id="problem-heading" class="text-3xl font-bold text-gray-800 mb-6 text-center">The Endotracheal Intubation Problem in Pediatric Care</h2>
-
-                <!-- Flexbox Layout for Image and Text -->
+        <section id="market" aria-labelledby="market-heading" class="py-16 bg-white">
+            <!-- Centered Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800">The Endotracheal Intubation Problem in Pediatric  Care</h2>
+                <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6">
+                    6% children have severe adverses events related to a wrong intubation.
+                </p>
+            </div>
+            
+            <div class="container mx-auto px-4 space-y-16">
+                <!-- First Row: Image on the left, Text on the right -->
                 <div class="flex flex-col md:flex-row items-center">
-                    <!-- Image Section -->
-                    <div class="problem-image md:w-1/2 w-full mb-8 md:mb-0">
-                        <img src="problem.jpg" alt="A picture representing the problem" class="w-full h-auto rounded-lg shadow-lg">
+                    <!-- Image on the left -->
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                        <img src="map5.png" alt="Market Image 1" class="w-full h-auto rounded-lg shadow-lg">
                     </div>
-
-                    <!-- Text Section -->
-                    <div class="problem-text md:w-1/2 w-full md:pl-8">
+                    <!-- Text on the right -->
+                    <div class="w-full md:w-1/2 md:pl-8">
+                        <h2 id="market-heading" class="text-3xl font-bold text-gray-800 mb-6">PICUS Beds</h2>
                         <p class="text-lg text-gray-700">
-                            Children are not small adults. They have anatomical and metabolic differences that make some procedures more difficult.
+                            The ratio of 1.6 pediatric beds per 1,000 live births in the public system is insufficient                        </p>
+                    </div>
+                </div>
+        
+                <!-- Second Row: Text on the left, Image on the right -->
+                <div class="flex flex-col md:flex-row-reverse items-center">
+                    <!-- Image on the right -->
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+                        <img src="map6.png" alt="Market Image 2" class="w-full h-auto rounded-lg shadow-lg">
+                    </div>
+                    <!-- Text on the left -->
+                    <div class="w-full md:w-1/2 md:pr-8">
+                        <h2 id="market-heading" class="text-3xl font-bold text-gray-800 mb-6">Pediatricians by Region</h2>
+                        <p class="text-lg text-gray-700">
+                            Only 8% of doctors in Brazil are Pediatricians.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+        
+        
 
 
         <!-- Market Size Section -->
         <section id="market" aria-labelledby="market-heading" class="py-16 bg-white">
-            <div class="container mx-auto px-4 flex flex-col md:flex-row">
-                <!-- Text on the left -->
-                <div class="w-full md:w-1/2 pr-0 md:pr-4 mb-4 md:mb-0">
+            <div class="container mx-auto px-4 flex flex-col items-center justify-center text-center">
+                <!-- Text on top, centered -->
+                <div class="w-full md:w-1/2">
                     <h2 id="market-heading" class="text-3xl font-bold text-gray-800 mb-6">A Huge Market Opportunity</h2>
-                    <p class="text-lg text-gray-700">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <p class="text-lg text-gray-700 mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
                 </div>
-                <!-- Chart on the right (will be under the text on mobile) -->
+                <!-- Image below, centered -->
                 <div class="w-full md:w-1/2">
-                    <img src="market.png" alt="Hero image description" class="w-full h-auto rounded-lg ">
+                    <img src="market.png" alt="Hero image description" class="w-full h-auto rounded-lg">
                 </div>
             </div>
         </section>
+        
         
 
         <!-- Solution Section -->
